@@ -1,0 +1,5 @@
+1693631488542	geckodriver	INFO	Listening on 127.0.0.1:42717
+1693631489046	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "40597" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileAO5xBb"
+XPCOMGlueLoad error for file /home/grayson/.cache/selenium/firefox/linux64/117.0/libmozgtk.so:
+libgtk-3.so.0: cannot open shared object file: No such file or directory
+Couldn't load XPCOM.
