@@ -14,7 +14,7 @@ def fp_proj_web_scraper():
     positions = ["qb", "rb", "wr", "te"]
     all_players = []
     for pos in positions:
-        position_url = f"https://www.fantasypros.com/nfl/projections/{pos}.php?week={nfl_week}&scoring=PPR"
+        position_url = f"https://www.fantasypros.com/nfl/projections/{pos}.php?week=draft&scoring=PPR"
         proj = requests.get(position_url)
         soup = BeautifulSoup(proj.text, "html.parser")
         proj_score = soup.find_all("td", attrs={"data-sort-value": True})

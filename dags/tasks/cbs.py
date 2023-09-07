@@ -14,7 +14,7 @@ def cbs_web_scrapper() -> list:
     positions = ['QB', 'RB', 'WR', 'TE']
     scoring = 'ppr'
     for position in positions:
-        base_projections = f"https://www.cbssports.com/fantasy/football/stats/{position}/2023/season/projections/{scoring}/"
+        base_projections = f"https://www.cbssports.com/fantasy/football/stats/{position}/2023/restofseason/projections/{scoring}/"
 
         res = requests.get(base_projections)
         soup = BeautifulSoup(res.text, "html.parser")
